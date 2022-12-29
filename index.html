@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PubSub</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="stats">
+        <span># people: </span>
+        <span class="num-people"></span>
+    </div>
+
+    <div class="people-controls">
+        <label for="add-person-name">Name:</label>
+        <input type="text" id="add-person-name">
+    
+        <label for="add-person-name">Age:</label>
+        <input type="text" id="add-person-age">
+    
+        <button class="add-person">Add person</button>
+
+    </div>
+
+
+    <div class="people">
+  
+    </div>
+
+
+    <template id="person-template">
+        <div class="person">
+            <p class="person-name"></p>
+            <p class="person-age"></p>
+            <button class="remove-person">Remove</button>
+        </div>
+    </template>
+    
+</body>
+</html>
